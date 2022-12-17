@@ -5,9 +5,7 @@ using namespace std;
 class Fighters {
 	friend class Fight;
 
-public:
-	string nameFirst;
-	string nameSecond;
+
 private:
 
 	int healthFirst;
@@ -17,7 +15,9 @@ private:
 	int healthSecond;
 	string  damagePerAttackSecond;
 public:
-
+	string nameFirst;
+	string nameSecond;
+	
 	void setName(string n) {
 		nameFirst = n;
 	}
@@ -36,7 +36,7 @@ public:
 	string getDamagePerAttack() {
 		return damagePerAttackFirst;
 	}
-	/*---------*/
+	
 	void setName1(string n) {
 		nameSecond = n;
 	}
